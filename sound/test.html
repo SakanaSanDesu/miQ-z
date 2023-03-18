@@ -1,0 +1,24 @@
+<head>
+
+    <title>ピアノ</title>
+    <link rel="stylesheet" href="style.css">  
+    <script src="https://unpkg.com/tone"></script>
+    <script src="./notes.js"></script>
+    <script src="./sound.js"></script>
+    <link rel="icon" href="./favicon.ico" id="favicon">
+</head>
+<body>
+    <img src="piano.png" alt="" srcset="">
+    <div>
+        <ul id="piano">
+        </ul>
+
+        テンポ(1分あたり):<input type="text" id = "tempo"><br>
+        コード進行:
+        <textarea name="code" id="code" rows="4" cols="40"></textarea>
+        <input type="button" name="a" id="a" value="読み込み(調整版)" onclick="readTextArea2()">
+        <input type="button" value ="play(調整版)" onclick="extendPlay()">
+        <br>
+        
+    </div>
+</body>
